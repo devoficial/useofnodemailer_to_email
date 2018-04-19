@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express'),
     path = require('path'),
     nodeMailer = require('nodemailer');
@@ -24,8 +25,8 @@ app.post('/send-email', function (req, res) {
           port: 465,
           secure: true,
           auth: {
-              user: 'debasisnath84@gmail.com',
-              pass: 'imdev1996'
+              user: process.env.GMAIL,
+              pass: process.env.GMAILPW
           }
       });
       let mailOptions = {
