@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 var port = process.env.PORT;
-var IP = process.env.IP;
+var ip = process.env.IP;
 
 
 app.get('/', function(req, res) {
@@ -46,6 +46,6 @@ app.post('/send-email', function(req, res) {
     });
 });
 
-app.listen(port, IP, function(req, res) {
+app.listen(port, ip, function(req, res) {
     console.log('Server is running at port: ', port);
 });
