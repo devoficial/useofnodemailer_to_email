@@ -7,6 +7,14 @@
 - [x] copy the code and paste inside the file
 - [x] make sure you are adding boostrp link just for a good contact form
 - [x] now create a .env file and store your gmail and password 
+- [x] you should put them here like below
+        ```javascript
+             auth{
+             user:"your user name",
+             pass:"your password"
+           }
+        ```
+         ### use .env file is recomended
 - [x] now just fire up your terminal with 
         ``` $ npm server.js ```
 - [x] if you are using c9 then just preview the app 
