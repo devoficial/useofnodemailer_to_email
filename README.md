@@ -8,8 +8,8 @@
 -  make sure you are adding boostrp link just for a good contact form
 -  now create a .env file and store your gmail and password 
 -  you should put them here like below
-        ```javascript
-             auth{
+        ```
+        auth{
              user:"your user name",
              pass:"your password"
            }
